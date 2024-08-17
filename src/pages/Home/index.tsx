@@ -1,8 +1,6 @@
 import { type PropsWithChildren } from "react";
 import { useNavigate } from "react-router";
 
-import Hex from "../../assets/hex.svg";
-
 // fancy mobile nav
 
 const w = 50;
