@@ -58,10 +58,9 @@ function Festival() {
               controls
               playsInline
               muted={false}
-              autoPlay={true}
+              autoPlay={false}
               preload="metadata"
-            >
-            </video>
+            ></video>
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
               <a
                 href="https://www.instagram.com/p/C9-XXdbIIA6/"

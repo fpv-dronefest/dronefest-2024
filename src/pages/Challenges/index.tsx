@@ -38,7 +38,15 @@ function Challenges() {
                   </ul>
                 </p>
               </p>
-              <video className="w-full" src="holt-way-mk-2.mp4" controls />
+              <video
+                className="w-full"
+                src="holt-way-mk-2.mp4"
+                controls
+                playsInline
+                muted={false}
+                autoPlay={false}
+                preload="metadata"
+              />
             </div>
           </div>
         </p>
