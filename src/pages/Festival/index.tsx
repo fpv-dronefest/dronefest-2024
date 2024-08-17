@@ -26,7 +26,7 @@ function Festival() {
           >
             <img
               className="border-4 border-black/70 rounded-lg rounded-br-none"
-              src="/map_pic.png"
+              src="map_pic.png"
               alt="Click to view Map"
             />
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
@@ -36,14 +36,14 @@ function Festival() {
           </a>
           <h2 className="uppercase">Getting to the camping area</h2>
           <a
-            href="/directions.png"
+            href="directions.png"
             className="flex flex-col items-end m-2"
             target="_blank"
             rel="noreferrer"
           >
             <img
               className="border-4 border-black/70 rounded-lg rounded-br-none"
-              src="/directions.png"
+              src="directions.png"
               alt="Directions"
             />
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
@@ -54,20 +54,13 @@ function Festival() {
           <div className="flex flex-col items-end m-2">
             <video
               className="border-4 border-black/70 rounded-lg rounded-br-none"
-              src="/directions.mp4"
+              src="directions.mp4"
               controls
               playsInline
               muted={false}
               autoPlay={true}
               preload="metadata"
             >
-              <track
-                label="English"
-                kind="subtitles"
-                srcLang="en"
-                src="/directions.srt"
-                default
-              />
             </video>
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
               <a

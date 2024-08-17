@@ -23,14 +23,14 @@ const FestivalMap: React.FC = () => {
       <div className="pt-4 w-full h-full">
         <div className="flex flex-col gap-4">
           <a
-            href="/dronefest_map.jpg"
+            href="dronefest_map.jpg"
             className="flex flex-col items-end m-2"
             target="_blank"
             rel="noreferrer"
           >
             <img
               className="border-4 border-black/70 rounded-lg rounded-br-none"
-              src="/dronefest_map.jpg"
+              src="dronefest_map.jpg"
               alt="Directions"
             />
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
