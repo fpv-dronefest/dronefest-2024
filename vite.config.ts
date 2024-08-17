@@ -24,6 +24,18 @@ export default defineConfig({
         short_name: "FPV-Dronefest-2024",
         description: "FPV Dronefest 2024",
         theme_color: "#8300e9",
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          }
+        ]
       },
 
       workbox: {
