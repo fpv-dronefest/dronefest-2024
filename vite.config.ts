@@ -13,6 +13,7 @@ export default defineConfig({
       registerType: "autoUpdate",
       injectRegister: false,
 
+
       pwaAssets: {
         disabled: false,
         config: true,
@@ -29,6 +30,8 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,svg,png,ico,mp4,webm,jpg,jpeg,gif}"],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
+
+        maximumFileSizeToCacheInBytes: 1024 * 1024 * 20,
       },
 
       devOptions: {
