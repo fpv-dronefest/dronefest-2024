@@ -11,8 +11,10 @@ import Festival from "./pages/Festival";
 import Timeline from "./pages/Timeline";
 import Challenges from "./pages/Challenges";
 
+const baseUrl = "/dronefest-2024";
+
 createRoot(document.getElementById("app")!).render(
-  <BrowserRouter>
+  <BrowserRouter basename={baseUrl}>
     <AnimatePresence mode="popLayout">
       <motion.div>
         <Routes>
