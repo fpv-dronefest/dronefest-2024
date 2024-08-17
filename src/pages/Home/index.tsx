@@ -85,14 +85,14 @@ function Home() {
           }}
         >
           <HomeButton
-            src="/ambulance.png"
+            src="ambulance.png"
             imgStyle={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
             url="/festival"
           >
             FESTIVAL
           </HomeButton>
           <HomeButton
-            src="/map_thumb.png"
+            src="map_thumb.png"
             imgStyle={{ opacity: 0.7 }}
             url="/map"
           >
@@ -108,16 +108,16 @@ function Home() {
             className="flex flex-col text-3xl relative"
             style={{ width, height, bottom: shift }}
           >
-            <img src="/Gemfan-FPVDF-2024-Colour.png" className="relative" />
+            <img src="Gemfan-FPVDF-2024-Colour.png" className="relative" />
             <img
-              src="/Gemfan-FPVDF-2024-Colour.png"
+              src="Gemfan-FPVDF-2024-Colour.png"
               className="absolute blur-md hue-rotate-180 brightness-200 mix-blend-plus-lighter scale-150 -z-10"
             />
           </div>
           <HomeButton url="/rules">RULES</HomeButton>
           <HomeButton url="/timeline">TIMELINE</HomeButton>
 
-          <HomeButton src="/prizes_thumb.png" url="/challenges">
+          <HomeButton src="prizes_thumb.png" url="/challenges">
             PRIZES
           </HomeButton>
         </div>
@@ -125,7 +125,7 @@ function Home() {
 
       <div className="shadow-2xl shadow-primary">
         <a href="/challenges">
-          <img src="/fl_banner.jpg" alt="Sponsors" />
+          <img src="fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>
     </div>
