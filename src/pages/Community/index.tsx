@@ -11,9 +11,15 @@ function Community() {
       <div className="p-2 mt-[2.8rem]">
         <div className="p-2 mt-[2.8rem] text-start">
           <div className="grid-cols-2 grid gap-4">
-            <div>FPV Dronefest Discord</div>
+            <a href="https://discord.gg/h8Ga2ypkqp" target="_blank" className="flex flex-col items-center justify-center gap-2">
+              <img className="rounded-full bg-white p-4 max-w-[110px]" src="discord.svg" alt="Discord" />
+              <span className="rounded-2xl bg-black/70 p-2">FPVDroneFest Discord</span>
+            </a>
 
-            <div>FPV Dronefest Facebook</div>
+            <a href="https://www.facebook.com/groups/3612414052324327" target="_blank" className="flex flex-col items-center justify-center gap-2">
+              <img className="rounded-full max-w-[110px]" src="facebook.svg" alt="Discord" />
+              <span className="rounded-2xl bg-black/70 p-2">FPVDroneFest Facebook</span>
+            </a>
           </div>
         </div>
       </div>

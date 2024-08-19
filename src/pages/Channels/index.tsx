@@ -1,5 +1,28 @@
 import BackButton from "@/components/BackButton";
 
+const channels = [
+  {
+    channel: 1,
+    name: "Powerloop",
+  },
+  {
+    channel: 2,
+    name: "Trippy Spin",
+  },
+  {
+    channel: 3,
+    name: "Matty Flip",
+  },
+  {
+    channel: 4,
+    name: "Juicy Flick",
+  },
+  {
+    channel: 5,
+    name: "Knife Edge",
+  },
+];
+
 function Channels() {
   return (
     <div className="relative">
@@ -15,7 +38,13 @@ function Channels() {
           </h1>
           <br />
 
-          <div className="grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 grid gap-4"></div>
+          <div className="grid-cols-1 md:grid-cols-3 lg:grid-cols-5 grid gap-4">
+            {channels.map((channel) => (
+              <div key={channel.channel}>
+                <img src={`channels/Channel_${channel.channel}.png`} alt={channel.name} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
