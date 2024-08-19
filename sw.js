@@ -2168,7 +2168,7 @@ class NavigationRoute extends Route {
     return false;
   }
 }
-precacheAndRoute([{"revision":null,"url":"assets/index-B5ckReiO.css"},{"revision":null,"url":"assets/index-CGtTr4lc.js"},{"revision":null,"url":"assets/workbox-window.prod.es5-D5gOYdM7.js"},{"revision":"54326f1300ec37796dc638358df73a92","url":"index.html"},{"revision":"f275ae84783bcc9d9f83b055613e5856","url":"pwa-64x64.png"},{"revision":"63bcdac9335c413b6dd276e37d139f3c","url":"pwa-192x192.png"},{"revision":"e557339d854a4b5c6d7847b09da3368d","url":"pwa-512x512.png"},{"revision":"555e36b2fba72e41657c3421543fe327","url":"maskable-icon-512x512.png"},{"revision":"407dd0e7e5c65e01ac03cd7d7d13975d","url":"manifest.webmanifest"}]);
+precacheAndRoute([{"revision":null,"url":"assets/index-BrQc_DHr.css"},{"revision":null,"url":"assets/index-P3R3RuEU.js"},{"revision":null,"url":"assets/workbox-window.prod.es5-D5gOYdM7.js"},{"revision":"c280e42f413e647b2bc99c10f7a65180","url":"index.html"},{"revision":"f275ae84783bcc9d9f83b055613e5856","url":"pwa-64x64.png"},{"revision":"63bcdac9335c413b6dd276e37d139f3c","url":"pwa-192x192.png"},{"revision":"e557339d854a4b5c6d7847b09da3368d","url":"pwa-512x512.png"},{"revision":"555e36b2fba72e41657c3421543fe327","url":"maskable-icon-512x512.png"},{"revision":"407dd0e7e5c65e01ac03cd7d7d13975d","url":"manifest.webmanifest"}]);
 cleanupOutdatedCaches();
 let allowlist;
 registerRoute(new NavigationRoute(
