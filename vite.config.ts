@@ -19,6 +19,7 @@ export default defineConfig({
       },
 
       srcDir: "src",
+      filename: "sw.ts",
 
       strategies: "injectManifest",
 
