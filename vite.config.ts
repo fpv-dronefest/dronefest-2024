@@ -25,7 +25,7 @@ export default defineConfig({
 
       manifest: {
         name: "FPV Dronefest 2024",
-        short_name: "FPV-Dronefest-2024",
+        short_name: "FPV DRONEFEST",
         description: "FPV Dronefest 2024",
         theme_color: "#8300e9",
         icons: [
