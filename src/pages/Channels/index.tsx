@@ -41,7 +41,10 @@ function Channels() {
           <div className="grid-cols-1 md:grid-cols-3 lg:grid-cols-5 grid gap-4">
             {channels.map((channel) => (
               <div key={channel.channel}>
-                <img src={`channels/Channel_${channel.channel}.png`} alt={channel.name} />
+                <img
+                  src={`channels/Channel_${channel.channel}.png`}
+                  alt={channel.name}
+                />
               </div>
             ))}
           </div>

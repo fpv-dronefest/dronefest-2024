@@ -6,7 +6,6 @@ import News from "./pages/News";
 import "./index.css";
 import Home from "./pages/Home";
 import Rules from "./pages/Rules";
-import { AnimatePresence, motion } from "framer-motion";
 import Festival from "./pages/Festival";
 import Timeline from "./pages/Timeline";
 import Challenges from "./pages/Challenges";
@@ -18,23 +17,19 @@ const baseUrl = "/dronefest-2024/";
 
 createRoot(document.getElementById("app")!).render(
   <BrowserRouter basename={baseUrl}>
-    <AnimatePresence mode="popLayout">
-      <motion.div>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="/festival" element={<Festival />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/map" element={<Map />} />
-            <Route path="/rules" element={<Rules />} />
-            <Route path="/timeline" element={<Timeline />} />
-            <Route path="/challenges" element={<Challenges />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/channels" element={<Channels />} />
-          </Route>
-        </Routes>
-      </motion.div>
-    </AnimatePresence>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="/festival" element={<Festival />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/map" element={<Map />} />
+        <Route path="/rules" element={<Rules />} />
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/challenges" element={<Challenges />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/channels" element={<Channels />} />
+      </Route>
+    </Routes>
   </BrowserRouter>,
 );

@@ -12,6 +12,9 @@ export default defineConfig({
     svgr(),
     VitePWA({
       registerType: "autoUpdate",
+      includeAssets: [
+        "public/**/*.*"
+      ],
 
       pwaAssets: {
         disabled: false,
@@ -60,7 +63,6 @@ export default defineConfig({
         ],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
-
         maximumFileSizeToCacheInBytes: 1024 * 1024 * 20,
       },
 
