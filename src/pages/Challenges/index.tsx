@@ -1,15 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router";
+import BackButton from "@/components/BackButton";
 
 function Challenges() {
-  const navigate = useNavigate();
-
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">
-        <Button className="absolute" onClick={() => navigate("/")}>
-          Back
-        </Button>
+        <BackButton />
         <h1 className="w-full font-bold">CHALLENGES AND PRIZES</h1>
       </div>
 

@@ -1,6 +1,6 @@
+import BackButton from "@/components/BackButton";
 import { Button } from "@/components/ui/button";
 import { useCallback, useMemo, useState } from "react";
-import { useNavigate } from "react-router";
 
 interface TimelineProps {
   title: string;
@@ -61,7 +61,8 @@ const timelineList = [
       },
       {
         title: "Evening Activities",
-        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
+        description:
+          "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
         time: "~19:00",
       },
     ],
@@ -117,7 +118,8 @@ const timelineList = [
       },
       {
         title: "Evening Activities",
-        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
+        description:
+          "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
         time: "~19:30",
       },
     ],
@@ -168,7 +170,8 @@ const timelineList = [
       },
       {
         title: "Evening Activities",
-        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
+        description:
+          "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
         time: "~19:30",
       },
     ],
@@ -225,7 +228,7 @@ function RightTimeline({ title, description, time }: TimelineProps) {
   return (
     <div className="flex md:contents">
       <div className="relative col-start-5 col-end-6 md:mx-auto"></div>
-      <div className="relative p-4 my-6 text-gray-800 bg-white col-start-6 col-end-10 mr-auto w-full h-[120px]">
+      <div className="relative p-4 my-6 text-gray-800 bg-white min-h-[120px] pb-2 col-start-6 col-end-10 mr-auto w-full h-[120px]">
         <h3 className="text-lg font-semibold lg:text-xl">{title}</h3>
         <p className="mt-2 leading-6">{description}</p>
         <span className="absolute font-bold text-lg text-indigo-200 -top-6 left-2 whitespace-nowrap">
@@ -239,7 +242,7 @@ function RightTimeline({ title, description, time }: TimelineProps) {
 function LeftTimeline({ title, description, time }: TimelineProps) {
   return (
     <div className="flex md:contents flex-row-reverse">
-      <div className="relative p-4 my-6 text-gray-800 bg-white w-full h-[120px] col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+      <div className="relative p-4 my-6 text-gray-800 bg-white w-full min-h-[120px] pb-2 col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
         <h3 className="text-lg font-semibold lg:text-xl">{title}</h3>
         <p className="mt-2 leading-6">{description}</p>
         <span className="absolute font-bold text-lg text-indigo-200 -top-6 left-2 whitespace-nowrap">
@@ -266,7 +269,7 @@ function TimelineDay({ day, date, events, index, start }: TimelineDayProps) {
   return (
     <div className="p-2 mt-[2.8rem]">
       <div className="p-4">
-        <h2 className="text-center text-white font-bold mb-5 bg-primary bg-opacity-50 w-full h-[120px] flex items-center justify-center text-4xl">
+        <h2 className="text-center text-white font-bold mb-5 bg-primary bg-opacity-50 w-full min-h-[120px] flex items-center justify-center text-4xl">
           DAY {index === 0 && "ZERO"}
           {index === 1 && "ONE"}
           {index === 2 && "TWO"}
@@ -290,8 +293,6 @@ function TimelineDay({ day, date, events, index, start }: TimelineDayProps) {
 }
 
 function Timeline() {
-  const navigate = useNavigate();
-
   const [showToday, setShowToday] = useState(false);
 
   const filterToday = useCallback(
@@ -320,9 +321,7 @@ function Timeline() {
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">
-        <Button className="absolute" onClick={() => navigate("/")}>
-          Back
-        </Button>
+        <BackButton />
         <h1 className="w-full font-bold">TIMELINE</h1>
       </div>
       <div className="p-2 mt-[2.8rem] bg-purple-800 bg-opacity-25 rounded-xl">

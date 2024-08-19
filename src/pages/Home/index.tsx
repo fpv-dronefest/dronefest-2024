@@ -27,7 +27,7 @@ function HomeButton({
 
   return (
     <button
-      onClick={() => navigate(url)}
+      onClick={() => navigate(url, { replace: true, preventScrollReset: false })}
       style={{
         width,
         height,
@@ -62,7 +62,10 @@ function HomeButton({
         >
           <span
             className="text-[10svw]"
-            style={{ textShadow: "0.8rem 0.8rem 7px #000000" }}
+            style={{
+              textShadow: "0.8rem 0.8rem 7px #000000",
+              WebkitTextStroke: "1px black",
+            }}
           >
             {children}
           </span>
@@ -99,6 +102,7 @@ function Home() {
             MAP
           </HomeButton>
           <HomeButton url="/news">NEWS</HomeButton>
+          <HomeButton url="/channels">CHANNELS</HomeButton>
         </div>
         <div
           className={`flex flex-col relative gap-[5px]`}
@@ -120,11 +124,13 @@ function Home() {
           <HomeButton src="prizes_thumb.png" url="/challenges">
             PRIZES
           </HomeButton>
+
+          <HomeButton url="/community">COMMUN-ITY</HomeButton>
         </div>
       </div>
 
       <div className="shadow-2xl shadow-primary">
-        <a href="/challenges">
+        <a href="/dronefest-2024/sponsors">
           <img src="fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>

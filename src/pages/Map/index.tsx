@@ -1,23 +1,11 @@
+import BackButton from "@/components/BackButton";
 import React from "react";
-import { useNavigate } from "react-router";
-import { Button } from "../../components/ui/button";
 
 const FestivalMap: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">
-        <Button
-          className="absolute"
-          onClick={() =>
-            navigate("/", {
-              preventScrollReset: false,
-            })
-          }
-        >
-          Back
-        </Button>
+        <BackButton />
         <h1 className="w-full font-bold">MAP</h1>
       </div>
       <div className="pt-4 w-full h-full">
