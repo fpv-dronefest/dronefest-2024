@@ -18,36 +18,6 @@ const timelineList = [
         description: "Flight tests, Registration, and Check-in.",
         time: "18:00 Onwards",
       },
-      {
-        title: "Free Flights",
-        description: "",
-        time: "09:45 - 12:30",
-      },
-      {
-        title: "Channel Swap + 2nd Failsafe Checks",
-        description: "",
-        time: "12:30 - 13:00",
-      },
-      {
-        title: "Lunch Break",
-        description: "",
-        time: "12:30 - 13:00",
-      },
-      {
-        title: "Free Flights",
-        description: "",
-        time: "13:00 - ~18:00",
-      },
-      {
-        title: "Flight Lines Close",
-        description: "",
-        time: "~18:00",
-      },
-      {
-        title: "Evening Activities",
-        description: "",
-        time: "~19:00",
-      },
     ],
   },
   {
@@ -91,7 +61,7 @@ const timelineList = [
       },
       {
         title: "Evening Activities",
-        description: "",
+        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
         time: "~19:00",
       },
     ],
@@ -147,7 +117,7 @@ const timelineList = [
       },
       {
         title: "Evening Activities",
-        description: "",
+        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
         time: "~19:30",
       },
     ],
@@ -192,9 +162,14 @@ const timelineList = [
         time: "~18:00",
       },
       {
-        title: "Evening Activities",
+        title: "Best Pack Award",
         description: "",
         time: "~19:00",
+      },
+      {
+        title: "Evening Activities",
+        description: "Activies held between 18:00 and 22:30 and include: Airsoft Free To Play - 5v5, Shisha, DJ, Fire Pit, Pool Table, Free (Ducted) Whoop Flights and Cinema Screenings!",
+        time: "~19:30",
       },
     ],
   },
@@ -228,29 +203,19 @@ const timelineList = [
         time: "12:30 - 13:00",
       },
       {
-        title: "Go Nuts Goggle Run",
-        description: "",
-        time: "13:00",
-      },
-      {
-        title: "Free Flights",
-        description: "",
-        time: "13:30 - ~18:00",
-      },
-      {
         title: "Flight Lines Close",
         description: "",
-        time: "~18:00",
+        time: "16:00",
       },
       {
-        title: "Giveaways",
+        title: "Site Clean Up",
         description: "",
-        time: "~19:00",
+        time: "16:00 - Onwards",
       },
       {
-        title: "GO HOME",
+        title: "GO HOME!",
         description: "",
-        time: "~19:30",
+        time: "16:00 - Onwards",
       },
     ],
   },
