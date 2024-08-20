@@ -17,12 +17,10 @@ function HomeButton({
   url,
   children,
   src,
-  loading,
   imgStyle,
 }: PropsWithChildren<{
   url: string;
   src?: string;
-  loading?: "lazy" | undefined;
   imgStyle?: React.CSSProperties;
 }>) {
   const navigate = useNavigate();
@@ -42,7 +40,6 @@ function HomeButton({
       <div className={`relative`} style={{ width, height }}>
         {src && (
           <img
-            loading={loading ?? undefined}
             src={src}
             style={{
               width,
@@ -126,7 +123,7 @@ function Home() {
           <HomeButton url="/rules">RULES</HomeButton>
           <HomeButton url="/timeline">TIMELINE</HomeButton>
 
-          <HomeButton loading="lazy" src="prizes_thumb.png" url="/challenges">
+          <HomeButton src="prizes_thumb.png" url="/challenges">
             PRIZES
           </HomeButton>
 
@@ -135,8 +132,8 @@ function Home() {
       </div>
 
       <div className="shadow-2xl shadow-primary">
-        <a href="/dronefest-2024/sponsors">
-          <img loading="lazy" src="fl_banner.jpg" alt="Sponsors" />
+        <a href="sponsors">
+          <img src="/fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>
     </div>

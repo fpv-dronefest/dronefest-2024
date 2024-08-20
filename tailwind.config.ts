@@ -22,8 +22,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Dosis"', "sans-serif"],
-        mono: ['"DM Mono"', "monospace"],
+        sans: ["'Dosis'", "sans-serif"],
+        mono: ["'DM Mono'", "monospace"],
       },
       colors: {
         brand: "hsl(var(--brand))",

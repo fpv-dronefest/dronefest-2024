@@ -12,9 +12,6 @@ export default defineConfig({
     svgr(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: [
-        "public/**/*.*"
-      ],
 
       pwaAssets: {
         disabled: false,
