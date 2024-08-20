@@ -2168,10 +2168,9 @@ class NavigationRoute extends Route {
     return false;
   }
 }
-precacheAndRoute([{"revision":null,"url":"assets/index-BrQc_DHr.css"},{"revision":null,"url":"assets/index-CopHCg8N.js"},{"revision":null,"url":"assets/workbox-window.prod.es5-D5gOYdM7.js"},{"revision":"fe49a8df98e11f39763028df29c30995","url":"index.html"},{"revision":"fb6704867357391a2ef5015f1d5b6f99","url":"pwa-64x64.png"},{"revision":"e4266fefc2f99fe61de83ee3494bfb97","url":"pwa-192x192.png"},{"revision":"d411ab1c0dfd6a1e7fd35d533cbbfce8","url":"pwa-512x512.png"},{"revision":"bf19bc2c84a2e5975bac3b52d414f31b","url":"maskable-icon-512x512.png"},{"revision":"71328dce11f988a42e548bc204579cf2","url":"manifest.webmanifest"}]);
+precacheAndRoute([{"revision":null,"url":"assets/index-BgxPVUcI.js"},{"revision":null,"url":"assets/index-SFkHu5ue.css"},{"revision":null,"url":"assets/workbox-window.prod.es5-D5gOYdM7.js"},{"revision":"ec46367eca8cc9c0e381ac340282e71b","url":"index.html"},{"revision":"fb6704867357391a2ef5015f1d5b6f99","url":"pwa-64x64.png"},{"revision":"e4266fefc2f99fe61de83ee3494bfb97","url":"pwa-192x192.png"},{"revision":"d411ab1c0dfd6a1e7fd35d533cbbfce8","url":"pwa-512x512.png"},{"revision":"bf19bc2c84a2e5975bac3b52d414f31b","url":"maskable-icon-512x512.png"},{"revision":"71328dce11f988a42e548bc204579cf2","url":"manifest.webmanifest"}]);
 cleanupOutdatedCaches();
 let allowlist;
-allowlist = [/^\/$/];
 registerRoute(
   new NavigationRoute(createHandlerBoundToURL("index.html"), { allowlist })
 );
