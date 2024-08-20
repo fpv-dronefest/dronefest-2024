@@ -46,6 +46,7 @@ const challenges = [
   {
     name: "Emergancy Exit - 1st 2nd 3rd",
     description: "Winner announced: Sunday night",
+    video: "sync.mp4",
     prizes: [
       "SupaFly 60% Build",
       "OddityRC Cinewhoop 60% Build",
@@ -60,6 +61,7 @@ const challenges = [
   {
     name: "VIP Dizzy Loop - 1st 2nd 3rd",
     description: "Winner announced: Sunday night",
+    video: "dizzy.mp4",
     prizes: ["Boxer +2 RX", "Chesty", "Steele Signed Cap"],
   },
   {

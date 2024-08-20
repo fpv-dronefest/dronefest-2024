@@ -11,34 +11,12 @@ export default defineConfig({
   plugins: [
     react(),
     svgr(),
-    ViteImageOptimizer({
-      includePublic: true,
-      avif: {
-        quality: 80,
-      },
-      webp: {
-        quality: 80,
-      },
-      jpeg: {
-        quality: 80,
-        progressive: true,
-      },
-      jpg: {
-        quality: 80,
-        progressive: true,
-      },
-      png: {
-        compressionLevel: 9,
-        quality: 80,
-      },
-      exclude: [
-        "Channel_1.png", "Channel_2.png", "Channel_3.png", "Channel_4.png", "Channel_5.png",
-        "channels/Channel_1.png", "channels/Channel_2.png", "channels/Channel_3.png", "channels/Channel_4.png", "channels/Channel_5.png",
-        "public/channels/Channel_1.png", "public/channels/Channel_2.png", "public/channels/Channel_3.png", "public/channels/Channel_4.png", "public/channels/Channel_5.png"
-      ],
-    }),
     VitePWA({
       registerType: "autoUpdate",
+
+      includeAssets: [
+        "**/*",
+      ],
 
       pwaAssets: {
         disabled: false,
@@ -55,6 +33,10 @@ export default defineConfig({
         short_name: "FPV DRONEFEST",
         description: "FPV Dronefest 2024",
         theme_color: "#8300e9",
+        scope: "/dronefest-2024/",
+        start_url: "/dronefest-2024/",
+        display: "standalone",
+        "orientation": "portrait-primary",
         icons: [
           {
             src: "pwa-64x64.png",
@@ -81,11 +63,7 @@ export default defineConfig({
       },
 
       workbox: {
-        globPatterns: [
-          "**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
-          "/dronefest-2024/**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
-          "public/**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
-        ],
+        globPatterns: ["**/*"],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         maximumFileSizeToCacheInBytes: 1024 * 1024 * 20,
@@ -101,6 +79,27 @@ export default defineConfig({
         navigateFallback: "index.html",
         suppressWarnings: false,
         type: "module",
+      },
+    }),
+    ViteImageOptimizer({
+      includePublic: true,
+      avif: {
+        quality: 80,
+      },
+      webp: {
+        quality: 80,
+      },
+      jpeg: {
+        quality: 80,
+        progressive: true,
+      },
+      jpg: {
+        quality: 80,
+        progressive: true,
+      },
+      png: {
+        compressionLevel: 9,
+        quality: 80,
       },
     }),
   ],
