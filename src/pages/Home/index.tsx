@@ -132,7 +132,7 @@ function Home() {
       </div>
 
       <div className="shadow-2xl shadow-primary">
-        <a href="sponsors">
+        <a href="/dronefest-2024/sponsors">
           <img src="fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>
