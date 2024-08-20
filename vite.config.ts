@@ -31,6 +31,11 @@ export default defineConfig({
         compressionLevel: 9,
         quality: 80,
       },
+      exclude: [
+        "Channel_1.png", "Channel_2.png", "Channel_3.png", "Channel_4.png", "Channel_5.png",
+        "channels/Channel_1.png", "channels/Channel_2.png", "channels/Channel_3.png", "channels/Channel_4.png", "channels/Channel_5.png",
+        "public/channels/Channel_1.png", "public/channels/Channel_2.png", "public/channels/Channel_3.png", "public/channels/Channel_4.png", "public/channels/Channel_5.png"
+      ],
     }),
     VitePWA({
       registerType: "autoUpdate",
@@ -79,6 +84,7 @@ export default defineConfig({
         globPatterns: [
           "**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
           "/dronefest-2024/**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
+          "public/**/*.{js,css,html,svg,png,ico,mp4,webm,avif,webp,jpg,jpeg,gif}",
         ],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
