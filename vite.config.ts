@@ -1,4 +1,5 @@
 import { VitePWA } from "vite-plugin-pwa";
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
@@ -10,6 +11,27 @@ export default defineConfig({
   plugins: [
     react(),
     svgr(),
+    ViteImageOptimizer({
+      includePublic: true,
+      avif: {
+        quality: 80,
+      },
+      webp: {
+        quality: 80,
+      },
+      jpeg: {
+        quality: 80,
+        progressive: true,
+      },
+      jpg: {
+        quality: 80,
+        progressive: true,
+      },
+      png: {
+        compressionLevel: 9,
+        quality: 80,
+      },
+    }),
     VitePWA({
       registerType: "autoUpdate",
 

@@ -133,7 +133,7 @@ function Home() {
 
       <div className="shadow-2xl shadow-primary">
         <a href="sponsors">
-          <img src="/fl_banner.jpg" alt="Sponsors" />
+          <img src="fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>
     </div>

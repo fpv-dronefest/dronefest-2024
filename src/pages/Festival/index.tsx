@@ -31,14 +31,14 @@ function Festival() {
           </a>
           <h2 className="uppercase">Getting to the camping area</h2>
           <a
-            href="/directions.png"
+            href="directions.png"
             className="flex flex-col items-end m-2"
             target="_blank"
             rel="noreferrer"
           >
             <img
               className="border-4 border-black/70 rounded-lg rounded-br-none"
-              src="/directions.png"
+              src="directions.png"
               alt="Directions"
             />
             <span className="text-md uppercase bg-black/70 p-2 rounded-b-lg">
