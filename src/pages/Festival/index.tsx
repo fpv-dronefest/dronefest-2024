@@ -66,7 +66,7 @@ function Festival() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Tap to play video{" "}
+                Tap to view on instagram{" "}
               </a>
             </span>
           </div>
