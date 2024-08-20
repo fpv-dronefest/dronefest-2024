@@ -118,7 +118,7 @@ function ChallengeCard({ name, description, video, prizes, index }: Challenge) {
               controls
               playsInline
               muted={false}
-              autoPlay={false}
+              autoPlay={true}
               preload="metadata"
             />
           </div>

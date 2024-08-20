@@ -12,6 +12,12 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/dosis':
+        specifier: ^5.0.21
+        version: 5.0.21
+      '@fontsource/dm-mono':
+        specifier: ^5.0.21
+        version: 5.0.21
       '@radix-ui/react-dialog':
         specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -948,6 +954,12 @@ packages:
 
   '@floating-ui/utils@0.2.5':
     resolution: {integrity: sha512-sTcG+QZ6fdEUObICavU+aB3Mp8HY4n14wYHdxK4fXjPmv3PXZZeY5RaguJmGyeH/CJQhX3fqKUtS4qc1LoHwhQ==}
+
+  '@fontsource-variable/dosis@5.0.21':
+    resolution: {integrity: sha512-eo4C3C72mdjJTg5MddazB9fWzJjG7Ek2d6atpgeE3MTXxODT9WEtIVd9WkUa2JAqNc/qdxk227ugA4JHIZpkLQ==}
+
+  '@fontsource/dm-mono@5.0.21':
+    resolution: {integrity: sha512-K+CCpqtp00VguKs80y+grAJS/DqwmwmhtaCxY1TIDaPMCo6DNO2C4KNdfOLPuJgZ4EYKw8EDoUStyLbi3nBhgQ==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -5497,6 +5509,10 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
 
   '@floating-ui/utils@0.2.5': {}
+
+  '@fontsource-variable/dosis@5.0.21': {}
+
+  '@fontsource/dm-mono@5.0.21': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:

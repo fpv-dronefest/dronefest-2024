@@ -1,7 +1,9 @@
 import BackButton from "@/components/BackButton";
 import React from "react";
+import { useNavigate } from "react-router";
 
 const FestivalMap: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">
@@ -10,10 +12,11 @@ const FestivalMap: React.FC = () => {
       </div>
       <div className="pt-4 w-full h-full">
         <div className="flex flex-col gap-4">
-          <a
-            href="dronefest_map.jpg"
+          <button
+            onClick={() => {
+              navigate("dronefest_map.jpg");
+            }}
             className="flex flex-col items-end m-2"
-            target="_blank"
             rel="noreferrer"
           >
             <img
@@ -25,7 +28,7 @@ const FestivalMap: React.FC = () => {
               {" "}
               Tap to enlarge{" "}
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </div>

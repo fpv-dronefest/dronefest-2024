@@ -84,3 +84,16 @@
     @apply list-decimal flex flex-col gap-4;
   }
 }
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+      font-family: "Dosis Variable", sans-serif;
+      font-weight: 500;
+      font-variation-settings: "wdth" 75, "wght" 500;
+  }
+}

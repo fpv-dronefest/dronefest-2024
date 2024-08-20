@@ -1,5 +1,5 @@
 import { VitePWA } from "vite-plugin-pwa";
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
@@ -14,9 +14,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
 
-      includeAssets: [
-        "**/*",
-      ],
+      includeAssets: ["**/*"],
 
       pwaAssets: {
         disabled: false,
@@ -36,7 +34,7 @@ export default defineConfig({
         scope: "/dronefest-2024/",
         start_url: "/dronefest-2024/",
         display: "standalone",
-        "orientation": "portrait-primary",
+        orientation: "portrait-primary",
         icons: [
           {
             src: "pwa-64x64.png",

@@ -1,6 +1,9 @@
 import BackButton from "@/components/BackButton";
+import { useNavigate } from "react-router";
 
 function Festival() {
+  const navigate = useNavigate();
+
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">
@@ -30,10 +33,11 @@ function Festival() {
             </span>
           </a>
           <h2 className="uppercase">Getting to the camping area</h2>
-          <a
-            href="directions.png"
+          <button
+            onClick={() => {
+              navigate("directions.png");
+            }}
             className="flex flex-col items-end m-2"
-            target="_blank"
             rel="noreferrer"
           >
             <img
@@ -45,7 +49,7 @@ function Festival() {
               {" "}
               Tap to enlarge{" "}
             </span>
-          </a>
+          </button>
           <div className="flex flex-col items-end m-2">
             <video
               className="border-4 border-black/70 rounded-lg rounded-br-none"
@@ -62,7 +66,7 @@ function Festival() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Tap to view on Instagram{" "}
+                Tap to play video{" "}
               </a>
             </span>
           </div>
