@@ -35,7 +35,7 @@ function Festival() {
           <h2 className="uppercase">Getting to the camping area</h2>
           <button
             onClick={() => {
-              navigate("directions.png");
+              window.open("/dronefest-2024/directions.png", "_blank");
             }}
             className="flex flex-col items-end m-2"
             rel="noreferrer"

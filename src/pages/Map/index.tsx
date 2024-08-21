@@ -14,7 +14,7 @@ const FestivalMap: React.FC = () => {
         <div className="flex flex-col gap-4">
           <button
             onClick={() => {
-              navigate("dronefest_map.jpg");
+              window.open("/dronefest-2024/dronefest_map.jpg", "_blank");
             }}
             className="flex flex-col items-end m-2"
             rel="noreferrer"

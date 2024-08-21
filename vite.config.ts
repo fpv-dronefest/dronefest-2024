@@ -68,8 +68,11 @@ export default defineConfig({
       },
 
       injectManifest: {
-        minify: false,
+        minify: true,
         enableWorkboxModulesLogs: true,
+        globFollow: true,
+        globPatterns: ["**/*"],
+        maximumFileSizeToCacheInBytes: 1024 * 1024 * 20,
       },
 
       devOptions: {
