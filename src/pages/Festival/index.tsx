@@ -1,9 +1,6 @@
 import BackButton from "@/components/BackButton";
-import { useNavigate } from "react-router";
 
 function Festival() {
-  const navigate = useNavigate();
-
   return (
     <div className="relative">
       <div className="p-2 top-2 flex justify-between flex-row items-center w-full z-10">

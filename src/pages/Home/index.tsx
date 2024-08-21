@@ -1,5 +1,8 @@
-import { type PropsWithChildren } from "react";
+import { useRef, type PropsWithChildren } from "react";
 import { useNavigate } from "react-router";
+
+import PWAInstall from "@khmyznikov/pwa-install/react-legacy";
+import { PWAInstallElement } from "@khmyznikov/pwa-install";
 
 // fancy mobile nav
 
@@ -78,6 +81,8 @@ function HomeButton({
 }
 
 function Home() {
+  const pwaInstallRef = useRef<PWAInstallElement>(null);
+
   return (
     <div className="flex-col flex gap-4">
       <div className={`Home flex flex-row w-full mt-12 -ml-5 pt-20`}>
@@ -136,6 +141,13 @@ function Home() {
           <img src="fl_banner.jpg" alt="Sponsors" />
         </a>
       </div>
+
+      <PWAInstall
+        ref={pwaInstallRef}
+        name={"FPV DRONEFEST"}
+        icon={"df-logo.svg"}
+        onPwaInstallAvailableEvent={(event) => console.log(event)}
+      ></PWAInstall>
     </div>
   );
 }

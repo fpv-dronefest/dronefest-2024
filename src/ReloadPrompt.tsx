@@ -23,7 +23,7 @@ function ReloadPrompt() {
         r &&
           setInterval(() => {
             console.log("Checking for sw update");
-            r.update();
+            void r.update();
           }, 20000 /* 20s for testing purposes */);
       } else {
         // eslint-disable-next-line prefer-template

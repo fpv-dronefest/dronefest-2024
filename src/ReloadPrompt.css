@@ -20,6 +20,11 @@
   text-align: left;
   box-shadow: 3px 4px 5px 0 #8885;
   background-color: rgba(0, 0, 0, 0.75);
+  width: calc(100svw - 32px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.275rem;
 }
 .ReloadPrompt-toast-message {
   margin-bottom: 8px;
