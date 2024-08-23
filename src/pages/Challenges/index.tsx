@@ -12,6 +12,10 @@ coventry corkscrew	1st 2nd 3rd	flyfish frame and motors, set of motors (flash), 
 999 loop	1st 2nd 3rd	Freestykle kings merch
 double knife edge	1st 2nd 3rd	frame x 60% build, frame x frame, ethix cap
 */
+interface Winner {
+  name: string;
+  place: string;
+}
 
 interface Challenge {
   name: string;
@@ -19,6 +23,7 @@ interface Challenge {
   video?: string;
   prizes: string[];
   index: number;
+  winners?: Winner[];
 }
 
 const challenges = [
@@ -60,9 +65,12 @@ const challenges = [
   },
   {
     name: "VIP Dizzy Loop - 1st 2nd 3rd",
-    description: "Winner announced: Sunday night",
+    description: "Winners announced upon completion",
     video: "dizzy.mp4",
     prizes: ["Boxer +2 RX", "Chesty", "Steele Signed Cap"],
+    winners: [
+      { name: 'Peter Ákos Harcsa-Pintér', place: '1st'},
+    ],
   },
   {
     name: "The Sniper - 1st 2nd 3rd",
@@ -90,14 +98,16 @@ const challenges = [
   },
 ];
 
-function ChallengeCard({ name, description, video, prizes, index }: Challenge) {
+function ChallengeCard({ name, description, video, prizes, index, winners }: Challenge) {
   return (
     <div
       className={`w-full flex flex-col items-start justify-start m-2 rounded-lg p-4 gap-4 shadow-2xl ${index % 2 === 0 ? "shadow-primary bg-primary/60" : "shadow-secondary bg-secondary/60"}`}
     >
-      <h3 className="text-white font-bold text-left w-full drop-shadow-md uppercase">
+      <h3 className={`text-white font-bold text-left w-full drop-shadow-md uppercase`}>
         {name}
       </h3>
+
+      {winners && winners.map(({ name, place }) => <p className="bg-white text-black p-2 rounded-xl w-full text-left text-sm font-bold uppercase"><p>{place} place winner</p> <p className="text-xl">&gt; {name}</p></p>)}
       <p className="text-xl font-semibold">{description}</p>
       <p className="text-xl text-left font-semibold">
         prizes:{" "}
@@ -150,6 +160,7 @@ function Challenges() {
                 description={challenge.description}
                 video={challenge.video}
                 prizes={challenge.prizes}
+                winners={challenge.winners}
               />
             ))}
           </div>
